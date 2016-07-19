@@ -14,6 +14,7 @@
 		3F4A67DB1D3EE9CA00C1C559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A67D91D3EE9CA00C1C559 /* LaunchScreen.storyboard */; };
 		3F4A67E61D3EE9CA00C1C559 /* inchallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A67E51D3EE9CA00C1C559 /* inchallengeTests.swift */; };
 		3F4A67F11D3EE9CA00C1C559 /* inchallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A67F01D3EE9CA00C1C559 /* inchallengeUITests.swift */; };
+		3F4A68031D3EEB6A00C1C559 /* challenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A68021D3EEB6A00C1C559 /* challenge.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F4A67EC1D3EE9CA00C1C559 /* inchallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inchallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4A67F01D3EE9CA00C1C559 /* inchallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inchallengeUITests.swift; sourceTree = "<group>"; };
 		3F4A67F21D3EE9CA00C1C559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4A68021D3EEB6A00C1C559 /* challenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenge.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		3F4A67CF1D3EE9CA00C1C559 /* inchallenge */ = {
 			isa = PBXGroup;
 			children = (
-				3F4A67D01D3EE9CA00C1C559 /* AppDelegate.swift */,
-				3F4A67D21D3EE9CA00C1C559 /* ViewController.swift */,
-				3F4A67D41D3EE9CA00C1C559 /* Main.storyboard */,
-				3F4A67D71D3EE9CA00C1C559 /* Assets.xcassets */,
-				3F4A67D91D3EE9CA00C1C559 /* LaunchScreen.storyboard */,
-				3F4A67DC1D3EE9CA00C1C559 /* Info.plist */,
+				3F4A68011D3EEAB600C1C559 /* Controller */,
+				3F4A68001D3EEAB000C1C559 /* Model */,
+				3F4A67FF1D3EEAA000C1C559 /* Config */,
+				3F4A67FE1D3EEA9200C1C559 /* View */,
 			);
 			path = inchallenge;
 			sourceTree = "<group>";
@@ -123,6 +123,41 @@
 				3F4A67F21D3EE9CA00C1C559 /* Info.plist */,
 			);
 			path = inchallengeUITests;
+			sourceTree = "<group>";
+		};
+		3F4A67FE1D3EEA9200C1C559 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A67D41D3EE9CA00C1C559 /* Main.storyboard */,
+				3F4A67D71D3EE9CA00C1C559 /* Assets.xcassets */,
+				3F4A67D91D3EE9CA00C1C559 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F4A67FF1D3EEAA000C1C559 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A67DC1D3EE9CA00C1C559 /* Info.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		3F4A68001D3EEAB000C1C559 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A68021D3EEB6A00C1C559 /* challenge.json */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F4A68011D3EEAB600C1C559 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A67D01D3EE9CA00C1C559 /* AppDelegate.swift */,
+				3F4A67D21D3EE9CA00C1C559 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +228,7 @@
 				TargetAttributes = {
 					3F4A67CC1D3EE9CA00C1C559 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 89W7776J34;
 					};
 					3F4A67E01D3EE9CA00C1C559 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -230,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4A67DB1D3EE9CA00C1C559 /* LaunchScreen.storyboard in Resources */,
+				3F4A68031D3EEB6A00C1C559 /* challenge.json in Resources */,
 				3F4A67D81D3EE9CA00C1C559 /* Assets.xcassets in Resources */,
 				3F4A67D61D3EE9CA00C1C559 /* Main.storyboard in Resources */,
 			);
@@ -401,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = inchallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nm.inchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = inchallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nm.inchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +527,7 @@
 				3F4A67F71D3EE9CA00C1C559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4A67F81D3EE9CA00C1C559 /* Build configuration list for PBXNativeTarget "inchallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +536,7 @@
 				3F4A67FA1D3EE9CA00C1C559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4A67FB1D3EE9CA00C1C559 /* Build configuration list for PBXNativeTarget "inchallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +545,7 @@
 				3F4A67FD1D3EE9CA00C1C559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
