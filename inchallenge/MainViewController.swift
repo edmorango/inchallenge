@@ -81,21 +81,34 @@ class MainViewController: UITableViewController{
         
         let produto = produtos[index]
         
-        
-        cell.imagem.image = produto.image
+        // Define os valores da View
         cell.nome.text = produto.name
-        
-        cell.nome.lineBreakMode = .ByWordWrapping
-        cell.nome.numberOfLines = 0
-        
         
         //Cria a parte tachada da String e concantena com a não tachada
         let tachada = NSMutableAttributedString(string: produto.last_price, attributes: [ NSStrikethroughStyleAttributeName : 1])
-        let ntachada = NSMutableAttributedString(string: " por " + produto.price)
-        tachada.appendAttributedString(ntachada)
+       
+        let normal = NSMutableAttributedString(string: " por " + produto.price)
+        
+        tachada.appendAttributedString(normal)
         
         
         cell.oferta.attributedText = tachada //.   + " por " + produto.price
+        
+        NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration()).dataTaskWithURL(produto.image_link, completionHandler: {
+            (data, response , err) -> Void in
+            
+            produto.image = UIImage(data: data!)
+            
+            cell.imagem.image = produto.image
+            
+            cell.setNeedsDisplay()
+            
+            print("Terminou: \(produto.id)"
+            )
+            
+        }).resume()
+        
+        
         
         
         

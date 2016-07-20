@@ -29,12 +29,12 @@
                                                 <constraint firstAttribute="width" secondItem="frI-MM-7ZX" secondAttribute="height" multiplier="55:59" id="t6W-xw-eGg"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bbbb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUp-pd-oNu">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bbbb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUp-pd-oNu">
                                             <rect key="frame" x="78" y="43" width="297" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="9K0-Lt-X5J"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -64,6 +64,7 @@
                                     <outlet property="imagem" destination="frI-MM-7ZX" id="OO3-lJ-SfX"/>
                                     <outlet property="nome" destination="trS-2d-bem" id="0jJ-Xm-3rg"/>
                                     <outlet property="oferta" destination="YUp-pd-oNu" id="7tZ-SI-0Rd"/>
+                                    <segue destination="MA4-jq-DiN" kind="show" id="jH5-Y6-5gT"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="header" textLabel="wKi-7w-nrA" rowHeight="23" style="IBUITableViewCellStyleDefault" id="vFL-HU-h56">
@@ -99,6 +100,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6P-Ve-ttY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439.5" y="-416.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vwd-bs-dCO">
+            <objects>
+                <viewController id="MA4-jq-DiN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ybn-H4-H0a"/>
+                        <viewControllerLayoutGuide type="bottom" id="0eC-Q8-gOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vUr-6d-W8j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpQ-G5-cqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.5" y="-416.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EAq-IB-Qjh">

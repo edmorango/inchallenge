@@ -30,6 +30,7 @@ class Produto{
     var id: Int
     var desc: String
     var image: UIImage!
+    var image_link: NSURL
     var last_price: String
     var last_price_raw: Float
     var link: String
@@ -43,7 +44,7 @@ class Produto{
         
         self.id             = (dict[Produto.ID] as! NSString).integerValue
         self.desc           = dict[Produto.DESC] as! String
-        self.image          = UIImage(data: NSData(contentsOfURL: NSURL(string: dict[Produto.IMAGE] as! String)!)!)
+        self.image_link     = NSURL(string: dict[Produto.IMAGE] as! String)!
         self.last_price     = dict[Produto.LAST_PRICE] as! String
         self.last_price_raw = dict[Produto.LAST_PRICE_RAW] as! Float
         self.link           = dict[Produto.LINK] as! String
@@ -52,6 +53,12 @@ class Produto{
         self.price_raw      = dict[Produto.PRICE_RAW] as! Float
         self.rating         = (dict[Produto.RATING] as! NSString).integerValue
     
+        
+        
+        
+        
+        
+        
     }
   
     
