@@ -103,11 +103,11 @@ class MainViewController: UITableViewController{
             
             cell.imagem.image = produto.image
             
-            
-            self.tableView.beginUpdates()
-            self.tableView.reloadRowsAtIndexPaths( [indexPath], withRowAnimation: .None)
-            self.tableView.endUpdates()
-        
+//            
+//            self.tableView.beginUpdates()
+//            self.tableView.reloadRowsAtIndexPaths( [indexPath], withRowAnimation: .None)
+//            self.tableView.endUpdates()
+//        
             
             
             

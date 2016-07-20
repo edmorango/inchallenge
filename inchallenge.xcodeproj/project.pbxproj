@@ -22,6 +22,7 @@
 		3F8644371D3FB7F300D82103 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8644361D3FB7F300D82103 /* DetailViewController.swift */; };
 		3F8644391D3FBB8300D82103 /* Estrela.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8644381D3FBB8300D82103 /* Estrela.swift */; };
 		3F86443B1D3FC49200D82103 /* DrawUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86443A1D3FC49200D82103 /* DrawUtils.swift */; };
+		3FB4840F1D402BB9004937FA /* Compartilhar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4840E1D402BB9004937FA /* Compartilhar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3F8644361D3FB7F300D82103 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3F8644381D3FBB8300D82103 /* Estrela.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estrela.swift; sourceTree = "<group>"; };
 		3F86443A1D3FC49200D82103 /* DrawUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawUtils.swift; sourceTree = "<group>"; };
+		3FB4840E1D402BB9004937FA /* Compartilhar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compartilhar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				3F8644381D3FBB8300D82103 /* Estrela.swift */,
 				3F86443A1D3FC49200D82103 /* DrawUtils.swift */,
 				3F6E13651D3FF9CA007BE233 /* Coracao.swift */,
+				3FB4840E1D402BB9004937FA /* Compartilhar.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				3F8644331D3F0F1B00D82103 /* Produto.swift in Sources */,
 				3F4A67D11D3EE9CA00C1C559 /* AppDelegate.swift in Sources */,
 				3F6E13661D3FF9CA007BE233 /* Coracao.swift in Sources */,
+				3FB4840F1D402BB9004937FA /* Compartilhar.swift in Sources */,
 				3F8644391D3FBB8300D82103 /* Estrela.swift in Sources */,
 				3F8644371D3FB7F300D82103 /* DetailViewController.swift in Sources */,
 				3F6A88481D3F045C00AEC90E /* Parser.swift in Sources */,

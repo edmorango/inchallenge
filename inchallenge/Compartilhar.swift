@@ -1,5 +1,5 @@
 //
-//  Coracao.swift
+//  Share.swift
 //  inchallenge
 //
 //  Created by José Eduardo Vieira Morango on 7/20/16.
@@ -9,45 +9,46 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-class Coracao: UIView{
 
 
+class Compartilhar: UIView{
+
+    
     
     override func layoutSubviews() {
         
         super.layoutSubviews()
-       
+        
         let shape = CAShapeLayer()
         
         shape.lineWidth = 2
         shape.fillColor = UIColor.whiteColor().CGColor
         shape.strokeColor = UIColor.blackColor().CGColor
         
-        let path = getCoracao(self.frame, scale: 0.7)
+        let path = getCompartilhar(self.frame, scale: 0.7)
         
         
         
         shape.path = path.CGPath
-//        path.stroke()
+        //        path.stroke()
         
         layer.addSublayer(shape)
         
         
     }
-
     
-    func getCoracao(originalRect: CGRect, scale: Double) -> UIBezierPath {
+    
+    func getCompartilhar(originalRect: CGRect, scale: Double) -> UIBezierPath {
         
         // Escala a largura do rect
         let scaledWidth = (originalRect.size.width * CGFloat(scale))
         
         //  Obtém a diferença da largura original para a escalada e divide por 2
         let scaledXValue = ((originalRect.size.width) - scaledWidth) / 2
-       
+        
         // Escala a altura do rect
         let scaledHeight = (originalRect.size.height * CGFloat(scale))
-       
+        
         //  Obtém a diferença da altura original para a escalada e divide por 2
         let scaledYValue = ((originalRect.size.height) - scaledHeight) / 2
         
@@ -72,7 +73,7 @@ class Coracao: UIView{
         path.addCurveToPoint(eCurvePoint,
                              controlPoint1: eControlPointOne ,
                              controlPoint2: eControlPointTwo )
-
+        
         
         
         // Define o raio como 25% do tamanho do rect
@@ -85,7 +86,7 @@ class Coracao: UIView{
                               startAngle: CGFloat(M_PI),
                               endAngle: 0,
                               clockwise: true)
-
+        
         
         
         // Posiciona X a 75% para o diamêtro do círculo cobrir o restante e mantém Y em 25%
@@ -105,13 +106,19 @@ class Coracao: UIView{
         path.addCurveToPoint(dCurvePoint,
                              controlPoint1: dControlPointOne,
                              controlPoint2: dControlPointTwo)
-       
+        
         
         
         path.closePath()
         return path
     }
 
-    
-    
+
+
+
+
+
+
+
+
 }
