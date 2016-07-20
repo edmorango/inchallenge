@@ -17,6 +17,7 @@
 		3F4A68031D3EEB6A00C1C559 /* challenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A68021D3EEB6A00C1C559 /* challenge.json */; };
 		3F6A88481D3F045C00AEC90E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A88471D3F045C00AEC90E /* Parser.swift */; };
 		3F8644331D3F0F1B00D82103 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8644321D3F0F1B00D82103 /* Produto.swift */; };
+		3F8644351D3F2A1700D82103 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8644341D3F2A1700D82103 /* ProdutoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F4A68021D3EEB6A00C1C559 /* challenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenge.json; sourceTree = "<group>"; };
 		3F6A88471D3F045C00AEC90E /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		3F8644321D3F0F1B00D82103 /* Produto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		3F8644341D3F2A1700D82103 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				3F4A67D01D3EE9CA00C1C559 /* AppDelegate.swift */,
 				3F4A67D21D3EE9CA00C1C559 /* MainViewController.swift */,
 				3F6A88471D3F045C00AEC90E /* Parser.swift */,
+				3F8644341D3F2A1700D82103 /* ProdutoTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				3F8644331D3F0F1B00D82103 /* Produto.swift in Sources */,
 				3F4A67D11D3EE9CA00C1C559 /* AppDelegate.swift in Sources */,
 				3F6A88481D3F045C00AEC90E /* Parser.swift in Sources */,
+				3F8644351D3F2A1700D82103 /* ProdutoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

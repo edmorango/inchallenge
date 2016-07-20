@@ -42,7 +42,6 @@ class Produto{
     init(dict : [String : AnyObject]){
         
         self.id             = (dict[Produto.ID] as! NSString).integerValue
-        
         self.desc           = dict[Produto.DESC] as! String
         self.image          = UIImage(data: NSData(contentsOfURL: NSURL(string: dict[Produto.IMAGE] as! String)!)!)
         self.last_price     = dict[Produto.LAST_PRICE] as! String
