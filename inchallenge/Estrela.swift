@@ -37,14 +37,19 @@ class Estrela: UIView{
         let width = self.frame.width * 0.1
         let height = self.frame.height * 0.1
         
+        // Cria shapes baseando-se no quantidade definida do storyboard
         for i in 1...number{
         
-        let shapeLayer = CAShapeLayer()
             
+            // Cria o layer e configura cores, size da linha.
+        let shapeLayer = CAShapeLayer()
             shapeLayer.lineWidth = 3
             shapeLayer.strokeColor = UIColor.blackColor().CGColor
             shapeLayer.fillColor = UIColor.whiteColor().CGColor
            
+            
+            
+            //Define o rect calculando qual é o número dele e multiplicando pelas constantes de espaçamento.
             let rect  = CGRect(x: baseSpacingX + spacingX * CGFloat(i-1) + width * CGFloat(i-1) , y: baseY, width: width, height: height)
             
             

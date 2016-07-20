@@ -190,9 +190,9 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-RJ-6aL">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-RJ-6aL" customClass="Coracao" customModule="inchallenge" customModuleProvider="target">
                                                     <rect key="frame" x="332" y="8" width="35" height="35"/>
-                                                    <color key="backgroundColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="0.043137254899999998" green="0.043137254899999998" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="E9j-3D-tyH"/>
                                                         <constraint firstAttribute="height" constant="35" id="V2n-S7-ekL"/>
