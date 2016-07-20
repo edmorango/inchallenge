@@ -94,6 +94,8 @@ class MainViewController: UITableViewController{
         
         cell.oferta.attributedText = tachada //.   + " por " + produto.price
         
+        
+        
         NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration()).dataTaskWithURL(produto.image_link, completionHandler: {
             (data, response , err) -> Void in
             
@@ -101,10 +103,14 @@ class MainViewController: UITableViewController{
             
             cell.imagem.image = produto.image
             
-            cell.setNeedsDisplay()
             
-            print("Terminou: \(produto.id)"
-            )
+            self.tableView.beginUpdates()
+            self.tableView.reloadRowsAtIndexPaths( [indexPath], withRowAnimation: .None)
+            self.tableView.endUpdates()
+        
+            
+            
+            
             
         }).resume()
         
@@ -116,6 +122,30 @@ class MainViewController: UITableViewController{
         return cell
     }
 
+    
+    
+    
+        
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+            performSegueWithIdentifier("detail", sender: indexPath.row)
+        
+    }
+        
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "detail"{
+        
+       let detailViewController  =  segue.destinationViewController as! DetailViewController
+         
+        detailViewController.produto = produtos[ sender as! Int ]
+            
+        
+        }
+        
+    }
     
     
     
