@@ -64,7 +64,7 @@
                                     <outlet property="imagem" destination="frI-MM-7ZX" id="OO3-lJ-SfX"/>
                                     <outlet property="nome" destination="trS-2d-bem" id="0jJ-Xm-3rg"/>
                                     <outlet property="oferta" destination="YUp-pd-oNu" id="7tZ-SI-0Rd"/>
-                                    <segue destination="MA4-jq-DiN" kind="show" id="jH5-Y6-5gT"/>
+                                    <segue destination="MA4-jq-DiN" kind="show" identifier="detail" id="jH5-Y6-5gT"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="header" textLabel="wKi-7w-nrA" rowHeight="23" style="IBUITableViewCellStyleDefault" id="vFL-HU-h56">
