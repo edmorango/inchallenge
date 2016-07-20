@@ -15,6 +15,8 @@
 		3F4A67E61D3EE9CA00C1C559 /* inchallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A67E51D3EE9CA00C1C559 /* inchallengeTests.swift */; };
 		3F4A67F11D3EE9CA00C1C559 /* inchallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A67F01D3EE9CA00C1C559 /* inchallengeUITests.swift */; };
 		3F4A68031D3EEB6A00C1C559 /* challenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4A68021D3EEB6A00C1C559 /* challenge.json */; };
+		3F6A88481D3F045C00AEC90E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A88471D3F045C00AEC90E /* Parser.swift */; };
+		3F8644331D3F0F1B00D82103 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8644321D3F0F1B00D82103 /* Produto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3F4A67F01D3EE9CA00C1C559 /* inchallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inchallengeUITests.swift; sourceTree = "<group>"; };
 		3F4A67F21D3EE9CA00C1C559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F4A68021D3EEB6A00C1C559 /* challenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenge.json; sourceTree = "<group>"; };
+		3F6A88471D3F045C00AEC90E /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		3F8644321D3F0F1B00D82103 /* Produto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				3F4A68021D3EEB6A00C1C559 /* challenge.json */,
+				3F8644321D3F0F1B00D82103 /* Produto.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			children = (
 				3F4A67D01D3EE9CA00C1C559 /* AppDelegate.swift */,
 				3F4A67D21D3EE9CA00C1C559 /* MainViewController.swift */,
+				3F6A88471D3F045C00AEC90E /* Parser.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -294,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4A67D31D3EE9CA00C1C559 /* MainViewController.swift in Sources */,
+				3F8644331D3F0F1B00D82103 /* Produto.swift in Sources */,
 				3F4A67D11D3EE9CA00C1C559 /* AppDelegate.swift in Sources */,
+				3F6A88481D3F045C00AEC90E /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

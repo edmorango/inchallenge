@@ -19,13 +19,26 @@ class MainViewController: UITableViewController{
         //Altera a fonte da navigation bar
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName : UIFont(name:"HelveticaNeue", size: 20)!]
     
+        Produto.produtoGenerator(Parser.getDictFromJSON())
     
+        
+        
     }
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        
         
-        
+        // Define a célula "header" como cabeçalho
     let header = tableView.dequeueReusableCellWithIdentifier("header")! as UIView
         
         
