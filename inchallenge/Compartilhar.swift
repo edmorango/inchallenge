@@ -14,6 +14,8 @@ import UIKit
 class Compartilhar: UIView{
 
     
+    @IBInspectable var linhaRetangulo : CGFloat = 1
+    @IBInspectable var linhaSeta : CGFloat = 1
     
     override func layoutSubviews() {
         
@@ -22,7 +24,7 @@ class Compartilhar: UIView{
         // Retângulo pai
         let shapeCont = CAShapeLayer()
         
-        shapeCont.lineWidth = 2
+        shapeCont.lineWidth = linhaRetangulo
         shapeCont.fillColor = UIColor.whiteColor().CGColor
         shapeCont.strokeColor = UIColor.blackColor().CGColor
         
@@ -34,7 +36,7 @@ class Compartilhar: UIView{
         let shapeSetaCont = CAShapeLayer()
         
         shapeSetaCont.fillColor = UIColor.whiteColor().CGColor
-        shapeSetaCont.lineWidth = 2
+        shapeSetaCont.lineWidth = linhaRetangulo
         shapeSetaCont.strokeColor = UIColor.whiteColor().CGColor
         
         let pathSetaCont = getSetaContainer(self.frame, scale: 0.7)
@@ -45,7 +47,7 @@ class Compartilhar: UIView{
         let shapeSeta = CAShapeLayer()
 
 
-        shapeSeta.lineWidth = 2
+        shapeSeta.lineWidth = linhaSeta
         shapeSeta.fillColor = UIColor.blackColor().CGColor
         shapeSeta.strokeColor = UIColor.blackColor().CGColor
 

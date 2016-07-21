@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 class Coracao: UIView{
 
-
+    @IBInspectable var linha: CGFloat = 1
     
     override func layoutSubviews() {
         
@@ -20,7 +20,7 @@ class Coracao: UIView{
        
         let shape = CAShapeLayer()
         
-        shape.lineWidth = 2
+        shape.lineWidth = linha
         shape.fillColor = UIColor.whiteColor().CGColor
         shape.strokeColor = UIColor.blackColor().CGColor
         

@@ -16,7 +16,7 @@ class Estrela: UIView{
 
     @IBInspectable var number : Int = 1
     @IBInspectable var sidesNumber : Int = 5
-    
+    @IBInspectable var linha : CGFloat = 1
     
     
     override func layoutSubviews() {
@@ -43,7 +43,7 @@ class Estrela: UIView{
             
             // Cria o layer e configura cores, size da linha.
         let shapeLayer = CAShapeLayer()
-            shapeLayer.lineWidth = 3
+            shapeLayer.lineWidth = linha
             shapeLayer.strokeColor = UIColor.blackColor().CGColor
             shapeLayer.fillColor = UIColor.whiteColor().CGColor
            
