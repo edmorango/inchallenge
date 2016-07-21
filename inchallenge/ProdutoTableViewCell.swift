@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-
+// Responsável por gerenciar a célula de produtos
 class ProdutoTableViewCell: UITableViewCell{
 
 

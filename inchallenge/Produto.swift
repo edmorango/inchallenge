@@ -61,7 +61,7 @@ class Produto{
         
     }
   
-    
+    // Gera a oferta exibida nas telas
     func getOfertaTachada() -> NSAttributedString!{
     
         let tachada = NSMutableAttributedString(string: self.last_price, attributes: [ NSStrikethroughStyleAttributeName : 1])

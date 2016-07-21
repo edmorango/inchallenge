@@ -120,10 +120,14 @@ class MainViewController: UITableViewController{
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        
+        
         if segue.identifier == "detail"{
         
-       let detailViewController  =  segue.destinationViewController as! DetailViewController
+            
+        let detailViewController  =  segue.destinationViewController as! DetailViewController
          
+        // Injeta a dependência
         detailViewController.produto = produtos[ sender as! Int ]
             
         

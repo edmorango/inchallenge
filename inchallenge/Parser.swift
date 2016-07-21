@@ -18,20 +18,20 @@ class Parser{
     
     static func getDictFromJSON() -> [String : AnyObject] {
         
-            guard let data = NSData(contentsOfFile: Parser.path) else{
-                
-                return [:]
-            
-            }
+        //Obtém o arquivo
+        let data = NSData(contentsOfFile: Parser.path)
         
+        // Deserializa o Json
+        let all = deserializeJSON(data!)
         
+        // Garante que retorno nunca seja nulo
+         guard let retorno = all[Parser.JSON_RESULT] as? [String: AnyObject] else{
         
-        let all = deserializeJSON(data)
-        
-        
-        return all[Parser.JSON_RESULT] as! [String: AnyObject]
-        
-            
+            return [:]
+       
+        }
+
+            return retorno
             
         
     
@@ -44,6 +44,7 @@ class Parser{
         var dict: [String : AnyObject] = [:]
         
         do{
+            //Transforma o arquvio Json em um dicionário.
             let dic = try NSJSONSerialization.JSONObjectWithData(json, options: NSJSONReadingOptions.AllowFragments) as! [String: AnyObject]
             
             dict = dic

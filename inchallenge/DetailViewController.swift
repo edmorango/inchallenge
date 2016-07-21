@@ -27,9 +27,10 @@ class DetailViewController: UITableViewController{
     
     override func viewWillAppear(animated: Bool) {
         
+        // Arredonda os cantos do botão
         button.layer.cornerRadius = button.frame.width * 0.05
         
-        
+        // Atribui a dependência aos seus respectivos componentes
         lbNome.text = produto.name
         lbDescricao.text = produto.desc
         lbOferta.attributedText = produto.getOfertaTachada()
