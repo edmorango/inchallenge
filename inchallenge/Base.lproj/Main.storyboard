@@ -198,9 +198,8 @@
                                                         <constraint firstAttribute="height" constant="35" id="V2n-S7-ekL"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gz-bF-1za">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gz-bF-1za" customClass="Compartilhar" customModule="inchallenge" customModuleProvider="target">
                                                     <rect key="frame" x="332" y="56" width="35" height="35"/>
-                                                    <color key="backgroundColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="THs-94-igQ"/>
                                                         <constraint firstAttribute="height" constant="35" id="yJX-yo-1hn"/>
