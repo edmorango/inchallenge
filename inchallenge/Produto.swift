@@ -62,6 +62,17 @@ class Produto{
     }
   
     
+    func getOfertaTachada() -> NSAttributedString!{
+    
+        let tachada = NSMutableAttributedString(string: self.last_price, attributes: [ NSStrikethroughStyleAttributeName : 1])
+        
+        let normal = NSMutableAttributedString(string: " por " + self.price)
+
+        tachada.appendAttributedString(normal)
+        return tachada
+        
+    }
+    
     
     
     static func produtoGenerator(dict : [String : AnyObject] ) -> [Produto]{

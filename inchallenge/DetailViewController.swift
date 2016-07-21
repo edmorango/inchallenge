@@ -20,15 +20,21 @@ class DetailViewController: UITableViewController{
     @IBOutlet weak var lbDescricao: UILabel!
 
 
-    
+    @IBOutlet weak var estrelas: Estrela!
    
+    @IBOutlet weak var button: UIButton!
+    
+    
     override func viewWillAppear(animated: Bool) {
+        
+        button.layer.cornerRadius = button.frame.width * 0.05
+        
         
         lbNome.text = produto.name
         lbDescricao.text = produto.desc
-        
-        
-        
+        lbOferta.attributedText = produto.getOfertaTachada()
+         estrelas.number = produto.rating
+        imagem.image = produto.image
         
         
         
@@ -42,6 +48,8 @@ class DetailViewController: UITableViewController{
     
     
     @IBAction func comprarAction(sender: AnyObject) {
+        
+       UIApplication.sharedApplication().openURL(NSURL(string: produto.link)!)
     }
 
 
